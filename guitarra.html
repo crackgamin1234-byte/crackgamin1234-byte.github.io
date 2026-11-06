@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="principal.css">
+  <link rel="stylesheet" href="barra-lateral.css">
+  <title>Curso de Guitarra | CEMB</title>
+</head>
+<body>
+  <canvas id="fondo-universo" aria-hidden="true"></canvas>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="index.html" aria-label="CEMB - Inicio">✦ CEMB</a>
+      </div>
+      <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false" type="button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" aria-haspopup="true">Cursos ▾</a>
+          <ul class="submenu">
+            <li>
+              <a href="piano.html">Piano</a>
+            </li>
+            <li>
+              <a href="guitarra.html">Guitarra</a>
+            </li>
+            <li>
+              <a href="trompeta.html">Trompeta</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a href="index.html#inscripcion">Inscripción</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <button class="hamburguesa" id="hamburguesa" aria-label="Abrir menú de clases" aria-expanded="false" type="button">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <aside class="menu-holografico" id="menuHolografico">
+      <div class="menu-titulo">
+        <h2>✦ CEMB</h2>
+        <p>MENÚ DE CLASES</p>
+      </div>
+      <nav class="menu-opciones">
+        <button data-clase="inicio" class="activo">
+          <span>⌂</span>  
+          Inicio
+        </button>
+        <button data-clase="clase1">
+          <span>✧</span> Clase 1
+        </button>
+        <button data-clase="clase2">
+          <span>✧</span> 
+          Clase 2
+        </button>
+        <button data-clase="clase3">
+          <span>✧</span> 
+          Clase 3
+        </button>
+        <button data-clase="clase4">
+          <span>✧</span>
+          Clase 4
+        </button>
+      </nav>
+      <div class="menu-pie">
+        <span>✦ SISTEMA CÓSMICO</span>
+      </div>
+    </aside>
+    <section class="contenido-principal">
+      <article class="pagina activa" id="inicio">
+        <div class="presentacion">
+          <small class="eyebrow">ACADEMIA / FORMACIÓN MUSICAL</small>
+          <h1>GUITARRA BÁSICA</h1>
+          <p>Primeros pasos para conocer la guitarra, afinar sus cuerdas, formar acordes y acompañar canciones con ritmos sencillos.</p>
+        </div>
+        <div class="bloque">
+          <strong>Organización del contenido</strong>
+          <p>Podras encontrar el material de Guitarra Básico dandole click al boton en la parte superior, comenzando con la clase 1. Mientras apruebes la primera evaluacion desbloquearas la siguiete clase. </p>
+        </div>
+      </article>
+      <article class="pagina" id="clase1">
+        <h1>CLASE 1: CONTENIDO COMPLETO DE GUITARRA</h1>
+        <p>Selecciona los apartados del recorrido para estudiar cada tema.</p>
+        <div class="curso-completo">
+          <section id="ruta">
+            <div class="section-title">
+              <small>Tu recorrido</small>
+              <h2>Ruta de aprendizaje</h2>
+              <p>Un recorrido gradual para comenzar a tocar guitarra desde cero.</p>
+            </div>
+            <div class="grid">
+              <a class="card" href="#partes" style="text-decoration:none">
+                <div class="number">01</div>
+                <h3>Conocer la guitarra</h3>
+                <p>Partes principales y tipos de guitarra.</p>
+              </a>
+              <a class="card" href="#cuerdas" style="text-decoration:none">
+                <div class="number">02</div>
+                <h3>Cuerdas y notas</h3>
+                <p>Nombres, orden y numeración de las seis cuerdas.</p>
+              </a>
+              <a class="card" href="#afinacion" style="text-decoration:none">
+                <div class="number">03</div>
+                <h3>Afinación</h3>
+                <p>Afinación estándar y uso de un afinador.</p>
+              </a>
+              <a class="card" href="#postura" style="text-decoration:none">
+                <div class="number">04</div>
+                <h3>Postura y técnica</h3>
+                <p>Cómo sentarse, sujetar la guitarra y colocar las manos.</p>
+              </a>
+              <a class="card" href="#acordes" style="text-decoration:none">
+                <div class="number">05</div>
+                <h3>Acordes básicos</h3>
+                <p>Primeras posiciones para acompañar canciones.</p>
+              </a>
+              <a class="card" href="#ritmo" style="text-decoration:none">
+                <div class="number">06</div>
+                <h3>Ritmo y rasgueo</h3>
+                <p>Movimiento de la mano y patrones sencillos.</p>
+              </a>
+            </div>
+          </section>
+          <section class="lesson" id="partes">
+            <div class="lesson-head">
+              <div class="lesson-no">01</div>
+              <div>
+                <h2>Conocer la guitarra</h2>
+                <p>La guitarra es un instrumento de cuerda que produce sonido al hacer vibrar sus cuerdas.</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="guitar-diagram">
+                <div class="guitar-icon">
+                  <img src="Guitarra.jpg">
+                </div>
+                <div>
+                  <h3>Partes principales</h3>
+                  <div class="part-list">
+                    <div class="part">Clavijero</div>
+                    <div class="part">Clavijas</div>
+                    <div class="part">Cejuela</div>
+                    <div class="part">Mástil</div>
+                    <div class="part">Trastes</div>
+                    <div class="part">Diapasón</div>
+                    <div class="part">Cuerpo</div>
+                    <div class="part">Boca</div>
+                    <div class="part">Puente</div>
+                    <div class="part">Selleta</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="grid" style="margin-top:16px">
+              <article class="card">
+                <h3>Guitarra acústica</h3>
+                <p>Su caja de resonancia amplifica el sonido de las cuerdas.</p>
+              </article>
+              <article class="card">
+                <h3>Guitarra clásica</h3>
+                <p>Generalmente utiliza cuerdas de nailon y es frecuente en el aprendizaje inicial.</p>
+              </article>
+              <article class="card">
+                <h3>Guitarra eléctrica</h3>
+                <p>Utiliza pastillas y amplificación electrónica para producir y proyectar el sonido.</p>
+              </article>
+            </div>
+          </section>
+          <section class="lesson" id="cuerdas">
+            <div class="lesson-head">
+              <div class="lesson-no">02</div>
+              <div>
+                <h2>Las seis cuerdas</h2>
+                <p>Las cuerdas se numeran desde la más delgada hasta la más gruesa.</p>
+              </div>
+            </div>
+            <div class="card">
+              <h3>Orden de las cuerdas al aire</h3>
+              <div class="string-list">
+                <div class="string">
+                  <b>1ª</b>
+                  <span>MI agudo</span>
+                </div>
+                <div class="string">
+                  <b>2ª</b>
+                  <span>SI</span>
+                </div>
+                <div class="string">
+                  <b>3ª</b>
+                  <span>SOL</span>
+                </div>
+                <div class="string">
+                  <b>4ª</b>
+                  <span>RE</span>
+                </div>
+                <div class="string">
+                  <b>5ª</b>
+                  <span>LA</span>
+                </div>
+                <div class="string">
+                  <b>6ª</b>
+                  <span>MI grave</span>
+                </div>
+              </div>
+              <div class="note">
+                Truco para recordar la afinación estándar: MI – LA – RE – SOL – SI – MI, desde la sexta cuerda (más gruesa) hasta la primera (más delgada).
+              </div>
+            </div>
+          </section>
+          <section class="lesson" id="afinacion">
+            <div class="lesson-head">
+              <div class="lesson-no">03</div>
+              <div>
+                <h2>Afinación de la guitarra</h2>
+                <p>Antes de practicar, comprueba que cada cuerda tenga la nota correcta.</p>
+              </div>
+            </div>
+            <div class="grid">
+              <article class="card">
+                <h3>1. Usa un afinador</h3>
+                <p>Puede ser un afinador electrónico, una aplicación o un afinador de pinza.</p>
+              </article>
+              <article class="card">
+                <h3>2. Toca una cuerda</h3>
+                <p>Haz sonar una cuerda al aire, sin presionar ningún traste.</p>
+              </article>
+              <article class="card">
+                <h3>3. Ajusta la clavija</h3>
+                <p>Gira poco a poco hasta que el afinador indique la nota deseada.</p>
+              </article>
+            </div>
+            <div class="note">
+              Afinación estándar, de la sexta a la primera cuerda: MI (E), LA (A), RE (D), SOL (G), SI (B), MI (E). Ajusta con cuidado para evitar tensar demasiado las cuerdas.
+            </div>
+          </section>
+          <section class="lesson" id="postura">
+            <div class="lesson-head">
+              <div class="lesson-no">04</div>
+              <div>
+                <h2>Postura y técnica inicial</h2>
+                <p>Una postura relajada permite tocar con mayor comodidad y control.</p>
+              </div>
+            </div>
+            <div class="grid">
+              <article class="card">
+                <h3>Posición del cuerpo</h3>
+                <p>Siéntate con la espalda cómoda y evita encorvar los hombros. Apoya la guitarra de forma estable.</p>
+              </article>
+              <article class="card">
+                <h3>Mano izquierda</h3>
+                <p>Presiona las cuerdas cerca del traste correspondiente, usando la punta de los dedos.</p>
+              </article>
+              <article class="card">
+                <h3>Mano derecha</h3>
+                <p>Relaja la muñeca y utiliza movimientos controlados para pulsar o rasguear las cuerdas.</p>
+              </article>
+            </div>
+            <div class="card" style="margin-top:16px">
+              <h3>Numeración de los dedos de la mano que pisa las cuerdas</h3>
+              <div class="chord-grid">
+                <div class="chord">
+                  <strong>1</strong>
+                  <small>Índice</small>
+                </div>
+                <div class="chord">
+                  <strong>2</strong>
+                  <small>Medio</small>
+                </div>
+                <div class="chord">
+                  <strong>3</strong>
+                  <small>Anular</small>
+                </div>
+                <div class="chord">
+                  <strong>4</strong>
+                  <small>Meñique</small>
+                </div>
+              </div>
+              <p style="margin-top:12px">El pulgar se coloca detrás del mástil como apoyo, sin apretar excesivamente.</p>
+            </div>
+          </section>
+          <section class="lesson" id="acordes">
+            <div class="lesson-head">
+              <div class="lesson-no">05</div>
+              <div>
+                <h2>Primeros acordes</h2>
+                <p>Un acorde combina varias notas que suenan al mismo tiempo.</p>
+              </div>
+            </div>
+            <div class="card">
+              <h3>Acordes abiertos para principiantes</h3>
+              <div class="chord-grid" style="margin-top:15px">
+                <div class="chord">
+                  <strong>Em</strong>
+                  <small>Mi menor</small>
+                  <p>Dos dedos en el segundo traste de las cuerdas quinta y cuarta.</p>
+                </div>
+                <div class="chord">
+                  <strong>Am</strong>
+                  <small>La menor</small>
+                  <p>Forma una posición compacta con tres dedos en los primeros dos trastes.</p>
+                </div>
+                <div class="chord">
+                  <strong>C</strong>
+                  <small>Do mayor</small>
+                  <p>Distribuye tres dedos entre las cuerdas segunda, cuarta y quinta.</p>
+                </div>
+                <div class="chord">
+                  <strong>G</strong>
+                  <small>Sol mayor</small>
+                  <p>Utiliza tres dedos en una posición abierta sobre el mástil.</p>
+                </div>
+                <div class="chord">
+                  <strong>D</strong>
+                  <small>Re mayor</small>
+                  <p>Forma una figura triangular en las tres cuerdas agudas.</p>
+                </div>
+              </div>
+              <div class="note">
+                Consejo: coloca los dedos uno por uno y toca cada cuerda del acorde para comprobar que suene clara. Estos son ejemplos de acordes iniciales; consulta un diagrama de digitación para ver la posición exacta de cada dedo.
+              </div>
+            </div>
+          </section>
+          <section class="lesson" id="ritmo">
+            <div class="lesson-head">
+              <div class="lesson-no">06</div>
+              <div>
+                <h2>Ritmo y rasgueo</h2>
+                <p>El rasgueo consiste en mover la mano sobre las cuerdas para crear un patrón rítmico.</p>
+              </div>
+            </div>
+            <div class="grid">
+              <article class="card">
+                <h3>Movimiento hacia abajo ↓</h3>
+                <p>Pasa los dedos o la púa desde la cuerda más grave hacia las más agudas.</p>
+              </article>
+              <article class="card">
+                <h3>Movimiento hacia arriba ↑</h3>
+                <p>Regresa desde las cuerdas agudas hacia las graves con un movimiento ligero.</p>
+              </article>
+              <article class="card">
+                <h3>Mantener el pulso</h3>
+                <p>Cuenta de manera constante y practica primero lentamente.</p>
+              </article>
+            </div>
+            <div class="card" style="margin-top:16px">
+              <h3>Patrón sencillo de práctica</h3>
+              <div class="note" style="font-size:1.25rem;text-align:center;letter-spacing:4px">
+                ↓　↓　↑　↑　↓　↑
+              </div>
+              <p style="margin-top:12px">
+                Repite el patrón con un solo acorde. Cuando el movimiento sea uniforme, cambia de acorde sin detener el ritmo.
+              </p>
+            </div>
+          </section>
+          <section class="lesson" id="ejecucion">
+            <div class="lesson-head">
+              <div class="lesson-no">07</div>
+              <div>
+                <h2>Cambiar entre acordes</h2>
+                <p>La coordinación entre ambas manos se desarrolla con repetición y paciencia.</p>
+              </div>
+            </div>
+            <div class="card">
+              <h3>Secuencia de entrenamiento</h3>
+              <div class="note-row">
+                <span class="note-chip">Em</span>
+                <span class="note-chip">G</span>
+                <span class="note-chip">C</span>
+                <span class="note-chip">D</span>
+              </div>
+              <ul style="padding-left:20px;margin-top:15px;color:#c4d0e7">
+                <li>Forma el primer acorde y verifica que las cuerdas suenen limpias.</li>
+                <li>Rasguea cuatro pulsos manteniendo el mismo ritmo.</li>
+                <li>Cambia al siguiente acorde lentamente.</li>
+                <li>Repite la secuencia sin acelerar.</li>
+              </ul>
+            </div>
+          </section>
+          <section class="lesson" id="practica">
+            <div class="lesson-head">
+              <div class="lesson-no">08</div>
+              <div>
+                <h2>Práctica guiada para principiantes</h2>
+                <p>Actividades para reforzar lo aprendido durante el curso.</p>
+              </div>
+            </div>
+            <div class="card">
+              <ul class="practice-list">
+                <li>
+                  Identifica el clavijero, las clavijas, el mástil, los trastes y el cuerpo.
+                </li>
+                <li>
+                  Memoriza los nombres de las seis cuerdas al aire.
+                </li>
+                <li>
+                  Afina la guitarra con un afinador.
+                </li>
+                <li>
+                  Practica la colocación de los dedos en Em, Am, C, G y D.
+                </li>
+                <li>
+                  Toca cada acorde cuerda por cuerda para comprobar que suene limpio.
+                </li>
+                <li>
+                  Practica rasgueos hacia abajo y hacia arriba manteniendo un pulso constante.
+                </li>
+                <li>
+                  Alterna dos acordes sin detener el ritmo.
+                </li>
+              </ul>
+              <div class="note">
+                Meta: conocer la guitarra, mantenerla afinada y acompañar una secuencia sencilla de acordes.
+              </div>
+            </div>
+          </section>
+          <section class="lesson" id="cierre">
+            <div class="section-title">
+              <small>Fin del recorrido</small>
+              <h2>Una base para seguir aprendiendo</h2>
+              <p>
+                El aprendizaje de la guitarra comienza conociendo el instrumento, afinando correctamente y practicando acordes y ritmos básicos.
+              </p>
+            </div>
+            <div class="grid">
+              <article class="card">
+                <h3>✦ Conocer</h3>
+                <p>Partes de la guitarra, cuerdas y afinación.</p>
+              </article>
+              <article class="card">
+                <h3>✦ Coordinar</h3>
+                <p>Postura, digitación y cambios de acordes.</p>
+              </article>
+              <article class="card">
+                <h3>✦ Acompañar</h3>
+                <p>Ritmos sencillos y rasgueos constantes.</p>
+              </article>
+            </div>
+            <div class="hero" style="min-height:220px;padding:35px 10px">
+              <div>
+                <h2 style="font-size:clamp(1.6rem,4vw,2.5rem);color:var(--cyan)">¡Sigue practicando!</h2>
+                <p>
+                  La constancia convierte cada acorde en un nuevo paso para disfrutar la música.
+                </p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </article>
+      <article class="pagina" id="clase2">
+        <h1>CLASE 2</h1>
+        <div class="bloque">
+          <strong>Contenido no asignado</strong>
+          <p>El material de Piano Básico de la clase 4 no se encuentra disponible.</p>
+        </div>
+      </article>
+      <article class="pagina" id="clase3">
+        <h1>CLASE 3</h1>
+        <div class="bloque">
+          <strong>Contenido no asignado</strong>
+          <p>El material de Piano Básico de la clase 4 no se encuentra disponible.</p>
+        </div>
+      </article>
+      <article class="pagina" id="clase4">
+        <h1>CLASE 4</h1>
+        <div class="bloque">
+          <strong>Contenido no asignado</strong>
+          <p>El material de Piano Básico de la clase 4 no se encuentra disponible.</p>
+        </div>
+      </article>
+    </section>
+  </main>
+  <footer>
+    © 2026 CEMB · Cursos Esenciales de Música Básica
+  </footer>
+  <script src="fondo-universo.js" defer></script>
+  <script src="barra-lateral.js" defer></script>
+</body>
+</html>
