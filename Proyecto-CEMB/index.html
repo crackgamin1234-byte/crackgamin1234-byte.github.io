@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inicio | CEMB</title>
+  <link rel="stylesheet" href="principal.css">
+</head>
+<body>
+  <canvas id="fondo-universo" aria-hidden="true"></canvas>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="index.html" aria-label="CEMB - Inicio">✦ CEMB</a>
+      </div>
+      <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false" type="button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" aria-haspopup="true">Cursos ▾</a>
+          <ul class="submenu">
+            <li>
+              <a href="piano.html">Piano</a>
+            </li>
+            <li>
+              <a href="guitarra.html">Guitarra</a>
+            </li>
+            <li>
+              <a href="trompeta.html">Trompeta</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a href="index.html#inscripcion">Inscripción</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="presentacion">
+      <h1>Bienvenido a Cursos Esenciales de Música Básica</h1>
+      <p>Descubre, aprende y desarrolla tu talento musical.</p>
+    </section>
+    <section class="contenedor-cards">
+      <article class="card">
+        <div>
+          <img src="piano.jpg">
+        </div>
+        <h2>🎹 PIANO</h2>
+        <p>Aprende el teclado, las notas naturales, las alteraciones, la lectura musical y la técnica inicial.</p>
+        <a href="piano.html">Entrar al curso</a>
+      </article>
+      <article class="card">
+        <div>
+          <img src="guitarra.jpg">
+        </div>
+        <h2>🎸 GUITARRA</h2>
+        <p>Conoce las partes, cuerdas, afinación, acordes básicos, ritmo y rasgueo.</p>
+        <a href="guitarra.html">Entrar al curso</a>
+      </article>
+      <article class="card">
+        <div>
+          <img src="trompeta.jpg">
+        </div>
+        <h2>🎺 TROMPETA</h2>
+        <p>Desarrolla la respiración, la embocadura, el sonido y el uso de los pistones.</p>
+        <a href="trompeta.html">Entrar al curso</a>
+      </article>
+    </section>
+    <section class="formulario-container" id="inscripcion">
+      <form class="form-holograma" id="miFormulario">
+        <h2>Formulario de Inscripción</h2>
+        <div class="campo">
+          <label for="nombre">Nombre completo:</label>
+          <input id="nombre" name="nombre" type="text" placeholder="Escribe tu nombre" required>
+        </div>
+        <div class="campo">
+          <label for="correo">Correo electrónico:</label>
+          <input id="correo" name="correo" type="email" placeholder="correo@ejemplo.com" required>
+        </div>
+        <div class="campo">
+          <label for="celular">Número de celular:</label>
+          <input id="celular" name="celular" type="tel" placeholder="Ingresa tu número" required>
+        </div>
+        <div class="campo">
+          <label for="ci">CI:</label>
+          <input id="ci" name="ci" type="text" placeholder="Carnet de identidad" required>
+        </div>
+        <div class="campo">
+          <label for="fecha">Fecha de nacimiento:</label>
+          <input id="fecha" name="fecha_nacimiento" type="date" required>
+        </div>
+        <div class="campo">
+          <label for="curso">✦ Selecciona un curso</label>
+          <select id="curso" name="curso" required>
+            <option value="" disabled selected>Elige una opción</option>
+            <option value="piano">Piano</option>
+            <option value="guitarra">Guitarra</option>
+            <option value="trompeta">Trompeta</option>
+          </select>
+        </div>
+        <button type="submit">ENVIAR DATOS</button>
+        <p id="respuesta" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+  <footer>
+    © 2026 CEMB - Cursos Esenciales de Música Básica. Todos los derechos reservados.
+  </footer>
+  <script src="fondo-universo.js" defer></script>
+</body>
+</html>

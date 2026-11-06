@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="principal.css">
+  <link rel="stylesheet" href="barra-lateral.css">
+  <title>Curso de Piano | CEMB</title>
+</head>
+<body>
+  <canvas id="fondo-universo" aria-hidden="true"></canvas>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="index.html" aria-label="CEMB - Inicio">✦ CEMB</a>
+      </div>
+      <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false" type="button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="index.html">Inicio</a></li>
+        <li class="nav-item">
+          <a href="#" aria-haspopup="true">Cursos ▾</a>
+          <ul class="submenu">
+            <li><a href="piano.html">Piano</a></li>
+            <li><a href="guitarra.html">Guitarra</a></li>
+            <li><a href="trompeta.html">Trompeta</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a href="index.html#inscripcion">Inscripción</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <button class="hamburguesa" id="hamburguesa" aria-label="Abrir menú de clases" aria-expanded="false" type="button">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <aside class="menu-holografico" id="menuHolografico">
+      <div class="menu-titulo">
+        <h2>✦ CEMB</h2>
+        <p>MENÚ DE CLASES</p>
+      </div>
+      <nav class="menu-opciones">
+        <button data-clase="inicio" class="activo">
+          <span>⌂</span>
+          Inicio
+        </button>
+        <button data-clase="clase1">
+          <span>✧</span>
+          Clase 1
+        </button>
+        <button data-clase="clase2">
+          <span>✧</span>
+          Clase 2
+        </button>
+        <button data-clase="clase3">
+          <span>✧</span>
+          Clase 3
+        </button>
+        <button data-clase="clase4">
+          <span>✧</span>
+          Clase 4
+        </button>
+      </nav>
+      <div class="menu-pie">
+        <span>✦ CEMB</span>
+      </div>
+    </aside>
+    <section class="contenido-principal">
+      <article class="pagina activa" id="inicio">
+        <div class="presentacion">
+          <small class="eyebrow">ACADEMIA / FORMACIÓN MUSICAL</small>
+          <h1>PIANO BÁSICO</h1>
+          <p>
+            Primeros pasos para comprender y ejecutar el teclado.
+            Aprende a reconocer las notas, leer símbolos musicales
+            y preparar tus manos para tocar.
+          </p>
+        </div>
+        <div class="rejilla">
+          <div class="bloque">
+            <strong>APRENDER</strong>
+            <p>Reconocer notas, teclas, símbolos y postura.</p>
+          </div>
+          <div class="bloque">
+            <strong>PRACTICAR</strong>
+            <p>Construir una base ordenada para tocar con ambas manos.</p>
+          </div>
+        </div>
+        <div class="bloque">
+          <strong>Organización del contenido</strong>
+          <p>
+            Podras encontrar el material de Piano Básico dandole click al boton en la parte superior, comenzando con la clase 1. Mientras apruebes la primera evaluacion desbloquearas la siguiete clase.
+          </p>
+        </div>
+      </article>
+      <article class="pagina" id="clase1">
+        <h1>CLASE 1: CONTENIDO BASICO PARA APRENDER A TOCAR EL</h1>
+        <p>
+          Selecciona los apartados del recorrido para estudiar
+          cada tema del curso.
+        </p>
+        <div class="curso-completo">
+          <section id="ruta">
+            <div class="section-title">
+              <small>Tu recorrido</small>
+              <h2>Ruta de aprendizaje</h2>
+              <p>
+                Un recorrido gradual para comenzar a tocar piano
+                desde cero.
+              </p>
+            </div>
+            <div class="grid">
+              <a class="card" href="#teclado" style="text-decoration:none">
+                <div class="number">01</div>
+                <h3>Conocer el teclado</h3>
+                <p>Identificación del instrumento y ubicación de las notas.</p>
+              </a>
+              <a class="card" href="#notas" style="text-decoration:none">
+                <div class="number">02</div>
+                <h3>Notas naturales</h3>
+                <p>Las siete notas, octavas y DO central.</p>
+              </a>
+              <a class="card" href="#alteraciones" style="text-decoration:none">
+                <div class="number">03</div>
+                <h3>Alteraciones</h3>
+                <p>Sostenido, bemol y becuadro.</p>
+              </a>
+              <a class="card" href="#pentagrama" style="text-decoration:none">
+                <div class="number">04</div>
+                <h3>El pentagrama</h3>
+                <p>Cinco líneas y cuatro espacios musicales.</p>
+              </a>
+              <a class="card" href="#claves" style="text-decoration:none">
+                <div class="number">05</div>
+                <h3>Claves musicales</h3>
+                <p>Clave de sol y clave de fa.</p>
+              </a>
+              <a class="card" href="#compas" style="text-decoration:none">
+                <div class="number">06</div>
+                <h3>Compás y figuras</h3>
+                <p>Duración de sonidos y silencios.</p>
+              </a>
+              <a class="card" href="#tecnica" style="text-decoration:none">
+                <div class="number">07</div>
+                <h3>Técnica inicial</h3>
+                <p>Posición de las manos y numeración de dedos.</p>
+              </a>
+              <a class="card" href="#practica" style="text-decoration:none">
+                <div class="number">08</div>
+                <h3>Práctica guiada</h3>
+                <p>Actividades para principiantes.</p>
+              </a>
+            </div>
+          </section>
+          <section class="lesson" id="teclado">
+            <div class="lesson-head">
+              <div class="lesson-no">01</div>
+              <div>
+                <h2>Conocer el instrumento</h2>
+                <p>
+                  El teclado organiza las notas de izquierda a derecha:
+                  de sonidos más graves a más agudos.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <h3>Representación del teclado</h3>
+              <div class="piano-visual">
+                <div class="piano-keys">
+                  <div class="white-key">DO</div>
+                  <div class="white-key">RE</div>
+                  <div class="white-key">MI</div>
+                  <div class="white-key">FA</div>
+                  <div class="white-key">SOL</div>
+                  <div class="white-key">LA</div>
+                  <div class="white-key">SI</div>
+                  <div class="white-key">DO</div>
+                </div>
+                <div class="piano-directions">
+                  <span>GRAVES ←</span>
+                  <span>→ AGUDOS</span>
+                </div>
+              </div>
+            </div>
+            <div class="grid" style="margin-top:16px">
+              <article class="card">
+                <h3>TECLAS BLANCAS</h3>
+                <p>
+                  Corresponden a las siete notas naturales:
+                  DO, RE, MI, FA, SOL, LA y SI.
+                </p>
+              </article>
+              <article class="card">
+                <h3>TECLAS NEGRAS</h3>
+                <p>
+                  Representan alteraciones de las notas naturales.
+                </p>
+              </article>
+            </div>
+            <div class="note">
+              Observa el teclado e identifica los grupos de dos
+              y tres teclas negras.
+            </div>
+          </section>
+          <section class="lesson" id="notas">
+            <div class="lesson-head">
+              <div class="lesson-no">02</div>
+              <div>
+                <h2>Las siete notas naturales</h2>
+                <p>
+                  Las notas se repiten en diferentes alturas
+                  a lo largo del teclado.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <h3>Secuencia de notas musicales</h3>
+              <div class="note-grid">
+                <div class="music-note">DO</div>
+                <div class="music-note">RE</div>
+                <div class="music-note">MI</div>
+                <div class="music-note">FA</div>
+                <div class="music-note">SOL</div>
+                <div class="music-note">LA</div>
+                <div class="music-note">SI</div>
+              </div>
+              <p style="margin-top:15px">
+                Después de SI, la secuencia vuelve a comenzar
+                con DO en una altura diferente.
+              </p>
+            </div>
+            <div class="note">
+              La primera tecla blanca del patrón, ubicada antes
+              del grupo de dos teclas negras, es DO.
+            </div>
+            <div class="grid">
+              <article class="card">
+                <h3>OCTAVA</h3>
+                <p>
+                  Conjunto de siete notas naturales que vuelve
+                  a comenzar.
+                </p>
+              </article>
+              <article class="card">
+                <h3>DO CENTRAL</h3>
+                <p>
+                  El material de estudio lo ubica en la tercera octava.
+                </p>
+              </article>
+            </div>
+          </section>
+          <section class="lesson" id="alteraciones">
+            <div class="lesson-head">
+              <div class="lesson-no">03</div>
+              <div>
+                <h2>Alteraciones musicales</h2>
+                <p>
+                  Cambian la altura de una nota natural y suelen
+                  representarse en las teclas negras.
+                </p>
+              </div>
+            </div>
+            <div class="grid">
+              <article class="card">
+                <div class="symbol">♯</div>
+                <h3>SOSTENIDO</h3>
+                <p>
+                  Eleva la nota natural un semitono.
+                </p>
+                <div class="note">
+                  Ejemplo: DO → DO♯
+                </div>
+              </article>
+              <article class="card">
+                <div class="symbol">♭</div>
+                <h3>BEMOL</h3>
+                <p>
+                  Baja la nota natural un semitono.
+                </p>
+                <div class="note">
+                  Ejemplo: RE → RE♭
+                </div>
+              </article>
+              <article class="card">
+                <div class="symbol">♮</div>
+                <h3>BECUADRO</h3>
+                <p>
+                  Devuelve a su valor natural una nota
+                  que estaba alterada.
+                </p>
+              </article>
+            </div>
+            <div class="card" style="margin-top:16px">
+              <h3>Posiciones por octava</h3>
+              <div class="number-highlight">
+                7 + 5 = 12
+              </div>
+              <p style="text-align:center">
+                7 notas naturales + 5 alteraciones habituales
+                = 12 posiciones por octava.
+              </p>
+            </div>
+            <div class="note">
+              Práctica: identifica sostenidos, bemoles y becuadros
+              en ejemplos sencillos y compáralos con las teclas del piano.
+            </div>
+          </section>
+          <section class="lesson" id="pentagrama">
+            <div class="lesson-head">
+              <div class="lesson-no">04</div>
+              <div>
+                <h2>Escritura musical: el pentagrama</h2>
+                <p>
+                  La música escrita organiza las notas en cinco
+                  líneas y cuatro espacios.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <h3>Representación del pentagrama</h3>
+              <div class="staff">
+                <div class="staff-line"></div>
+                <div class="staff-line"></div>
+                <div class="staff-line"></div>
+                <div class="staff-line"></div>
+                <div class="staff-line"></div>
+              </div>
+              <p style="text-align:center;margin-top:20px">
+                5 líneas horizontales · 4 espacios
+              </p>
+              <p style="text-align:center">
+                Se cuentan desde abajo hacia arriba.
+              </p>
+            </div>
+            <div class="grid">
+              <article class="card">
+                <h3>LÍNEAS</h3>
+                <p>
+                  Se numeran de la primera (abajo) a la quinta (arriba).
+                </p>
+              </article>
+              <article class="card">
+                <h3>ESPACIOS</h3>
+                <p>
+                  Se ubican entre dos líneas consecutivas.
+                </p>
+              </article>
+            </div>
+          </section>
+          <section class="lesson" id="claves">
+            <div class="lesson-head">
+              <div class="lesson-no">05</div>
+              <div>
+                <h2>Las claves musicales</h2>
+                <p>
+                  La clave da nombre a las líneas y espacios
+                  del pentagrama.
+                </p>
+              </div>
+            </div>
+            <div class="grid">
+              <article class="card">
+                <div class="clef-symbol">𝄞</div>
+                <h3>CLAVE DE SOL</h3>
+                <p>
+                  Señala que la nota SOL se encuentra
+                  en la segunda línea.
+                </p>
+                <div class="note">
+                  En el teclado se utiliza para la mano derecha.
+                </div>
+              </article>
+              <article class="card">
+                <div class="clef-symbol">𝄢</div>
+                <h3>CLAVE DE FA</h3>
+                <p>
+                  Señala que la nota FA se encuentra
+                  en la cuarta línea.
+                </p>
+                <div class="note">
+                  En el teclado se utiliza para la mano izquierda.
+                </div>
+              </article>
+            </div>
+            <div class="card" style="margin-top:16px">
+              <h3>Las dos claves en el piano</h3>
+              <p>
+                En piano, ambas claves se relacionan para representar
+                el registro amplio del instrumento.
+              </p>
+            </div>
+          </section>
+          <section class="lesson" id="compas">
+            <div class="lesson-head">
+              <div class="lesson-no">06</div>
+              <div>
+                <h2>Compás, figuras y silencios</h2>
+                <p>
+                  Elementos que ayudan a organizar el tiempo musical.
+                </p>
+              </div>
+            </div>
+            <div class="grid">
+              <article class="card">
+                <h3>COMPÁS</h3>
+                <p>
+                  Espacio delimitado por barras que ordena
+                  la escritura musical.
+                </p>
+              </article>
+              <article class="card">
+                <h3>INDICACIÓN DE COMPÁS</h3>
+                <p>
+                  El número al inicio de la partitura indica
+                  cuántos tiempos entran en cada compás.
+                </p>
+              </article>
+              <article class="card">
+                <h3>FIGURAS Y SILENCIOS</h3>
+                <p>
+                  Las figuras indican duración del sonido
+                  y los silencios indican pausas.
+                </p>
+              </article>
+            </div>
+            <div class="card" style="margin-top:16px">
+              <h3>Duraciones presentadas en el material</h3>
+              <div class="duration-grid">
+                <div class="duration">
+                  <div class="duration-symbol">𝅝</div>
+                  <h3>REDONDA</h3>
+                  <p>4 tiempos</p>
+                </div>
+                <div class="duration">
+                  <div class="duration-symbol">𝅗𝅥</div>
+                  <h3>BLANCA</h3>
+                  <p>2 tiempos</p>
+                </div>
+                <div class="duration">
+                  <div class="duration-symbol">♩</div>
+                  <h3>NEGRA</h3>
+                  <p>1 tiempo</p>
+                </div>
+                <div class="duration">
+                  <div class="duration-symbol">♪</div>
+                  <h3>CORCHEA</h3>
+                  <p>½ tiempo</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="lesson" id="tecnica">
+            <div class="lesson-head">
+              <div class="lesson-no">07</div>
+              <div>
+                <h2>Preparación para tocar</h2>
+                <p>
+                  Una postura cómoda facilita el control
+                  y evita tensiones innecesarias.
+                </p>
+              </div>
+            </div>
+            <div class="grid">
+              <article class="card">
+                <h3>POSICIÓN DE LAS MANOS</h3>
+                <p>
+                  Manos sueltas y relajadas. Los dedos deben estar
+                  ligeramente curvados, no rectos ni levantados.
+                </p>
+              </article>
+              <article class="card">
+                <h3>NUMERACIÓN DE DEDOS</h3>
+                <p>
+                  El pulgar es el dedo número 1 en ambas manos.
+                  La numeración ayuda a leer partituras
+                  y ejecutar pasajes.
+                </p>
+              </article>
+            </div>
+            <div class="card" style="margin-top:16px">
+              <h3>Numeración de los dedos</h3>
+              <div class="finger-grid">
+                <div class="finger">
+                  <strong>1</strong>
+                  <small>Pulgar</small>
+                </div>
+                <div class="finger">
+                  <strong>2</strong>
+                  <small>Índice</small>
+                </div>
+                <div class="finger">
+                  <strong>3</strong>
+                  <small>Medio</small>
+                </div>
+                <div class="finger">
+                  <strong>4</strong>
+                  <small>Anular</small>
+                </div>
+                <div class="finger">
+                  <strong>5</strong>
+                  <small>Meñique</small>
+                </div>
+              </div>
+            </div>
+            <div class="note">
+              Consejo de práctica: comenzar despacio,
+              mantener la relajación y repetir con atención.
+            </div>
+          </section>
+          <section class="lesson" id="practica">
+            <div class="lesson-head">
+              <div class="lesson-no">08</div>
+              <div>
+                <h2>Práctica guiada para principiantes</h2>
+                <p>
+                  Actividades sugeridas para consolidar
+                  los conceptos estudiados.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <h3>Actividades del curso</h3>
+              <ul class="practice-list">
+                <li>
+                  Localiza todos los DO identificando
+                  los grupos de dos teclas negras.
+                </li>
+                <li>
+                  Nombra en voz alta la secuencia
+                  DO – RE – MI – FA – SOL – LA – SI.
+                </li>
+                <li>
+                  Identifica sostenidos, bemoles y becuadros
+                  en ejemplos sencillos.
+                </li>
+                <li>
+                  Dibuja un pentagrama y marca sus cinco
+                  líneas y cuatro espacios.
+                </li>
+                <li>
+                  Cuenta los tiempos de compases sencillos
+                  y reconoce las figuras estudiadas.
+                </li>
+                <li>
+                  Coloca ambas manos con dedos curvados
+                  e identifica el pulgar como dedo 1.
+                </li>
+              </ul>
+              <div class="note">
+                Meta: reconocer el teclado y comprender los símbolos
+                básicos antes de avanzar a repertorio.
+              </div>
+            </div>
+          </section>
+          <section class="lesson" id="cierre">
+            <div class="section-title">
+              <small>Fin del recorrido</small>
+              <h2>Una base para seguir aprendiendo</h2>
+              <p>
+                El dominio inicial del piano comienza por reconocer
+                el instrumento y comprender su lenguaje.
+              </p>
+            </div>
+            <div class="grid">
+              <article class="card">
+                <h3>✦ RECONOCER</h3>
+                <p>
+                  Notas naturales, octavas y alteraciones.
+                </p>
+              </article>
+              <article class="card">
+                <h3>✦ LEER</h3>
+                <p>
+                  Pentagrama, claves, compás y duración.
+                </p>
+              </article>
+              <article class="card">
+                <h3>✦ EJECUTAR</h3>
+                <p>
+                  Postura relajada y numeración de dedos.
+                </p>
+              </article>
+            </div>
+            <div class="hero" style="min-height:220px;padding:35px 10px">
+              <div>
+                <h2 style="font-size:clamp(1.6rem,4vw,2.5rem);color:var(--cyan)">
+                  ¡Sigue practicando!
+                </h2>
+                <p>
+                  La constancia y la práctica consciente convierten
+                  cada tecla en una oportunidad para aprender.
+                </p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </article>
+      <article class="pagina" id="clase2">
+        <h1>CLASE 2</h1>
+        <div class="bloque">
+          <strong>Contenido de la clase 2</strong>
+          <p>
+            El material de Piano Básico de la Clase 2 no se encuentra disponible.
+          </p>
+        </div>
+      </article>
+      <article class="pagina" id="clase3">
+        <h1>CLASE 3</h1>
+        <div class="bloque">
+          <strong>Contenido de la clase 3</strong>
+          <p>
+            El material de Piano Básico de la Clase 3 no se encuentra disponible.
+          </p>
+        </div>
+      </article>
+      <article class="pagina" id="clase4">
+        <h1>CLASE 4</h1>
+        <div class="bloque">
+          <strong>Contenido de la clase 4</strong>
+          <p>
+            El material de Piano Básico de la clase 4 no se encuentra disponible.
+          </p>
+        </div>
+      </article>
+    </section>
+  </main>
+  <footer>
+    © 2026 CEMB · Cursos Esenciales de Música Básica.
+  </footer>
+  <script src="fondo-universo.js" defer></script>
+  <script src="barra-lateral.js" defer></script>
+</body>
+</html>

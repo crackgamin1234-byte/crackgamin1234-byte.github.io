@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="principal.css">
+  <link rel="stylesheet" href="barra-lateral.css">
+  <title>Curso de Trompeta | CEMB</title>
+</head>
+<body>
+  <canvas id="fondo-universo" aria-hidden="true"></canvas>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="index.html" aria-label="CEMB - Inicio">✦ CEMB</a>
+      </div>
+      <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false" type="button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" aria-haspopup="true">Cursos ▾</a>
+          <ul class="submenu">
+            <li>
+              <a href="piano.html">Piano</a>
+            </li>
+            <li>
+              <a href="guitarra.html">Guitarra</a>
+            </li>
+            <li>
+              <a href="trompeta.html">Trompeta</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a href="index.html#inscripcion">Inscripción</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <button class="hamburguesa" id="hamburguesa" aria-label="Abrir menú de clases" aria-expanded="false" type="button">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <aside class="menu-holografico" id="menuHolografico">
+      <div class="menu-titulo">
+        <h2>✦ CEMB</h2>
+        <p>MENÚ DE CLASES</p>
+      </div>
+      <nav class="menu-opciones">
+        <button data-clase="inicio" class="activo">
+          <span>⌂</span>
+          Inicio
+        </button>
+        <button data-clase="clase1">
+          <span>✧</span>
+          Clase 1
+        </button>
+        <button data-clase="clase2">
+          <span>✧</span>
+          Clase 2
+        </button>
+        <button data-clase="clase3">
+          <span>✧</span>
+          Clase 3
+        </button>
+        <button data-clase="clase4">
+          <span>✧</span>
+          Clase 4
+        </button>
+      </nav>
+      <div class="menu-pie">
+        <span>✦ SISTEMA CÓSMICO</span>
+      </div>
+    </aside>
+    <section class="contenido-principal">
+      <article class="pagina activa" id="inicio">
+        <div class="presentacion">
+          <small class="eyebrow">ACADEMIA / FORMACIÓN MUSICAL</small>
+          <h1>TROMPETA BÁSICA</h1>
+          <p>
+            Primeros pasos para conocer la trompeta, desarrollar la respiración, formar una embocadura cómoda y producir tus primeras notas.
+          </p>
+        </div>
+        <div class="bloque">
+          <strong>Organización del contenido</strong>
+          <p>
+            Podras encontrar el material de Trompeta Básico dandole click al boton en la parte superior, comenzando con la clase 1. Mientras apruebes la primera evaluacion desbloquearas la siguiete clase. 
+          </p>
+        </div>
+      </article>
+      <article class="pagina" id="clase1">
+        <h1>CLASE 1: CONTENIDO COMPLETO DE TROMPETA</h1>
+        <p>Selecciona los apartados del recorrido para estudiar cada tema.</p>
+        <div class="curso-completo">
+          <section id="ruta">
+            <div class="section-title">
+              <small>Tu recorrido</small>
+              <h2>Ruta de aprendizaje</h2>
+              <p>Un recorrido gradual para comenzar a tocar trompeta desde cero.</p>
+            </div>
+            <div class="grid">
+              <a class="card" href="#partes" style="text-decoration:none">
+                <div class="number">01</div>
+                <h3>Conocer la trompeta</h3>
+                <p>Partes, funcionamiento y cuidado del instrumento.</p>
+              </a>
+              <a class="card" href="#respiracion" style="text-decoration:none">
+                <div class="number">02</div>
+                <h3>Respiración</h3>
+                <p>Control del aire y apoyo respiratorio.</p>
+              </a>
+              <a class="card" href="#embocadura" style="text-decoration:none">
+                <div class="number">03</div>
+                <h3>Embocadura</h3>
+                <p>Posición de labios y uso de la boquilla.</p>
+              </a>
+              <a class="card" href="#sonido" style="text-decoration:none">
+                <div class="number">04</div>
+                <h3>Primer sonido</h3>
+                <p>Vibración de labios y emisión de sonido.</p>
+              </a>
+              <a class="card" href="#valvulas" style="text-decoration:none">
+                <div class="number">05</div>
+                <h3>Pistones y notas</h3>
+                <p>Cómo funcionan las válvulas y las combinaciones.</p>
+              </a>
+              <a class="card" href="#tecnica" style="text-decoration:none">
+                <div class="number">06</div>
+                <h3>Técnica inicial</h3>
+                <p>Postura, articulación y lectura musical básica.</p>
+              </a>
+            </div>
+          </section>
+          <section class="lesson" id="partes">
+            <div class="lesson-head">
+              <div class="lesson-no">01</div>
+              <div>
+                <h2>Conocer la trompeta</h2>
+                <p>
+                  La trompeta es un instrumento de viento-metal. El sonido se produce al hacer vibrar los labios en la boquilla.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <div style="text-align:center;font-size:6rem;filter:drop-shadow(0 0 18px #55eaff66)">
+                <img src="trompeta.jpg">
+              </div>
+              <h3>Partes principales del instrumento</h3>
+              <div class="part-grid">
+                <div class="part">Boquilla</div>
+                <div class="part">Tudel</div>
+                <div class="part">Tubo principal</div>
+                <div class="part">Pistón 1</div>
+                <div class="part">Pistón 2</div>
+                <div class="part">Pistón 3</div>
+                <div class="part">Bombas de afinación</div>
+                <div class="part">Campana</div>
+                <div class="part">Desagüe</div>
+              </div>
+            </div>
+            <div class="grid" style="margin-top:16px">
+              <article class="card">
+                <h3>Boquilla</h3>
+                <p>
+                  Recibe el aire y permite que los labios vibren para iniciar el sonido.
+                </p>
+              </article>
+              <article class="card">
+                <h3>Pistones</h3>
+                <p>
+                  Desvían el aire por diferentes recorridos para cambiar la longitud del tubo.
+                </p>
+              </article>
+              <article class="card">
+                <h3>Campana</h3>
+                <p>Es la abertura amplia por donde se proyecta el sonido.</p>
+              </article>
+            </div>
+          </section>
+          <section class="lesson" id="respiracion">
+            <div class="lesson-head">
+              <div class="lesson-no">02</div>
+              <div>
+                <h2>Respiración y control del aire</h2>
+                <p>El aire es la energía que permite producir y sostener el sonido.</p>
+              </div>
+            </div>
+            <div class="grid">
+              <article class="card">
+                <h3>Inspirar con calma</h3>
+                <p>
+                  Relaja hombros y cuello. Toma aire de forma cómoda y evita levantar los hombros.
+                </p>
+              </article>
+              <article class="card">
+                <h3>Soltar el aire</h3>
+                <p>
+                  Deja salir el aire de manera constante, sin empujar con tensión excesiva.
+                </p>
+              </article>
+              <article class="card">
+                <h3>Controlar la duración</h3>
+                <p>
+                  Practica mantener una salida de aire estable durante varios segundos, sin forzar.
+                </p>
+              </article>
+            </div>
+            <div class="note">
+              Ejercicio inicial sin instrumento: inspira cómodamente y exhala con un flujo suave y uniforme. Detente si sientes mareo o incomodidad.
+            </div>
+          </section>
+          <section class="lesson" id="embocadura">
+            <div class="lesson-head">
+              <div class="lesson-no">03</div>
+              <div>
+                <h2>La embocadura y la boquilla</h2>
+                <p>
+                  La embocadura es la forma en que los labios se colocan para producir la vibración.
+                </p>
+              </div>
+            </div>
+            <div class="steps">
+              <div class="step">
+                <b>1 · Relajar</b>
+                <p>Evita apretar la mandíbula o tensar el rostro.</p>
+              </div>
+              <div class="step">
+                <b>2 · Colocar</b>
+                <p>Apoya la boquilla suavemente sobre los labios, sin presionar en exceso.</p>
+              </div>
+              <div class="step">
+                <b>3 · Vibrar</b>
+                <p>Junta los labios con suavidad y deja que el aire genere la vibración.</p>
+              </div>
+              <div class="step">
+                <b>4 · Descansar</b>
+                <p>Haz pausas frecuentes para evitar fatiga y presión innecesaria.</p>
+              </div>
+            </div>
+            <div class="note">
+              No es necesario apretar la boquilla contra los labios. La comodidad, la relajación y la práctica gradual son fundamentales.
+            </div>
+          </section>
+          <section class="lesson" id="sonido">
+            <div class="lesson-head">
+              <div class="lesson-no">04</div>
+              <div>
+                <h2>Producir el primer sonido</h2>
+                <p>Antes de tocar melodías, trabaja una vibración estable y cómoda.</p>
+              </div>
+            </div>
+            <div class="grid">
+              <article class="card">
+                <h3>Vibración de labios</h3>
+                <p>
+                  Practica una vibración suave de los labios sin forzar ni buscar notas muy agudas.
+                </p>
+              </article>
+              <article class="card">
+                <h3>Sonido con boquilla</h3>
+                <p>
+                  Con la boquilla, intenta producir un sonido corto y cómodo, manteniendo el aire constante.
+                </p>
+              </article>
+              <article class="card">
+                <h3>Sonido con trompeta</h3>
+                <p>
+                  Coloca la boquilla en el instrumento y busca repetir el sonido con una emisión relajada.
+                </p>
+              </article>
+            </div>
+            <div class="note">
+              La calidad del sonido se construye poco a poco. Evita tocar con dolor, presión excesiva o cansancio en los labios.
+            </div>
+          </section>
+          <section class="lesson" id="valvulas">
+            <div class="lesson-head">
+              <div class="lesson-no">05</div>
+              <div>
+                <h2>Pistones y producción de notas</h2>
+                <p>
+                  Los tres pistones modifican el recorrido del aire y permiten obtener diferentes notas.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <h3>Los tres pistones</h3>
+              <div class="valves">
+                <div class="valve">
+                  <b>1</b>
+                  Primer pistón
+                </div>
+                <div class="valve">
+                  <b>2</b>
+                  Segundo pistón
+                </div>
+                <div class="valve">
+                  <b>3</b>
+                  Tercer pistón
+                </div>
+              </div>
+              <p style="margin-top:15px">
+                En la digitación habitual, el primer pistón se acciona con el índice, el segundo con el medio y el tercero con el anular de la mano derecha.
+              </p>
+            </div>
+            <div class="card" style="margin-top:16px">
+              <h3>Combinaciones habituales</h3>
+              <div class="part-grid" style="margin-top:12px">
+                <div class="part">Abierto: ninguno</div>
+                <div class="part">1: primer pistón</div>
+                <div class="part">2: segundo pistón</div>
+                <div class="part">3: tercer pistón</div>
+                <div class="part">1 + 2</div>
+                <div class="part">1 + 3</div>
+                <div class="part">2 + 3</div>
+                <div class="part">1 + 2 + 3</div>
+              </div>
+              <div class="note">
+                La combinación de pistones no determina por sí sola una única nota: también influyen la columna de aire y la vibración de los labios. La trompeta en Si♭ es transpositora; sus notas escritas suenan un tono más abajo.
+              </div>
+            </div>
+          </section>
+          <section class="lesson" id="tecnica">
+            <div class="lesson-head">
+              <div class="lesson-no">06</div>
+              <div>
+                <h2>Postura y técnica inicial</h2>
+                <p>Una posición natural ayuda a respirar y tocar con comodidad.</p>
+              </div>
+            </div>
+            <div class="grid">
+              <article class="card">
+                <h3>Postura del cuerpo</h3>
+                <p>
+                  Mantén la espalda erguida sin rigidez, hombros relajados y ambos pies apoyados.
+                </p>
+              </article>
+              <article class="card">
+                <h3>Sujeción</h3>
+                <p>
+                  Sostén el instrumento de manera estable, sin cargar todo su peso sobre la mano derecha.
+                </p>
+              </article>
+              <article class="card">
+                <h3>Articulación</h3>
+                <p>
+                  Para iniciar las notas, practica un ataque suave con la sílaba «tu», sin golpear ni tensar la lengua.
+                </p>
+              </article>
+            </div>
+            <div class="note">
+              Empieza con notas cómodas y ejercicios cortos. Alterna práctica y descanso para cuidar los labios.
+            </div>
+          </section>
+          <section class="lesson" id="lectura">
+            <div class="lesson-head">
+              <div class="lesson-no">07</div>
+              <div>
+                <h2>Lectura musical básica</h2>
+                <p>
+                  La lectura permite reconocer la altura y duración de las notas en una partitura.
+                </p>
+              </div>
+            </div>
+            <div class="grid">
+              <article class="card">
+                <h3>Pentagrama</h3>
+                <p>
+                  Está formado por cinco líneas y cuatro espacios donde se escriben las notas.
+                </p>
+              </article>
+              <article class="card">
+                <h3>Clave de sol</h3>
+                <p>
+                  Es la clave utilizada habitualmente para escribir la música de trompeta.
+                </p>
+              </article>
+              <article class="card">
+                <h3>Figuras musicales</h3>
+                <p>Redonda, blanca, negra y corchea representan distintas duraciones.</p>
+              </article>
+            </div>
+            <div class="note">
+              Si estudias trompeta en Si♭, recuerda que la partitura suele escribirse en una tonalidad distinta a la que suena en un instrumento de afinación de concierto.
+            </div>
+          </section>
+          <section class="lesson" id="practica">
+            <div class="lesson-head">
+              <div class="lesson-no">08</div>
+              <div>
+                <h2>Práctica guiada para principiantes</h2>
+                <p>Actividades para consolidar los fundamentos de la trompeta.</p>
+              </div>
+            </div>
+            <div class="card">
+              <ul class="practice-list">
+                <li>Identifica la boquilla, el tudel, los tres pistones y la campana.</li>
+                <li>Practica una respiración cómoda y una salida de aire uniforme.</li>
+                <li>Realiza vibraciones suaves de labios sin forzar.</li>
+                <li>Intenta producir sonidos cortos y cómodos con la boquilla.</li>
+                <li>Aprende a accionar los pistones con los dedos correctos.</li>
+                <li>Practica ataques suaves con la sílaba «tu».</li>
+                <li>Reconoce la clave de sol y las figuras musicales básicas.</li>
+              </ul>
+              <div class="note">
+                Meta: desarrollar una emisión cómoda, conocer el instrumento y comenzar a controlar el aire y los pistones.
+              </div>
+            </div>
+          </section>
+          <section class="lesson" id="cierre">
+            <div class="section-title">
+              <small>Fin del recorrido</small>
+              <h2>Una base para seguir aprendiendo</h2>
+              <p>
+                El aprendizaje de la trompeta comienza con una respiración controlada, una embocadura relajada y práctica constante.
+              </p>
+            </div>
+            <div class="grid">
+              <article class="card">
+                <h3>✦ Respirar</h3>
+                <p>Control del aire y continuidad del flujo.</p>
+              </article>
+              <article class="card">
+                <h3>✦ Producir</h3>
+                <p>Vibración de labios y sonido cómodo.</p>
+              </article>
+              <article class="card">
+                <h3>✦ Interpretar</h3>
+                <p>Pistones, articulación y lectura inicial.</p>
+              </article>
+            </div>
+            <div class="hero" style="min-height:220px;padding:35px 10px">
+              <div>
+                <h2 style="font-size:clamp(1.6rem,4vw,2.5rem);color:var(--cyan)">¡Sigue practicando!</h2>
+                <p>
+                  La paciencia, la respiración y la práctica consciente te ayudarán a desarrollar tu sonido.
+                </p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </article>
+      <article class="pagina" id="clase2">
+        <h1>CLASE 2</h1>
+        <div class="bloque">
+          <strong>Contenido no asignado</strong>
+          <p>El material de trompeta fue solicitado únicamente en Clase 1.</p>
+        </div>
+      </article>
+      <article class="pagina" id="clase3">
+        <h1>CLASE 3</h1>
+        <div class="bloque">
+          <strong>Contenido no asignado</strong>
+          <p>El material de trompeta fue solicitado únicamente en Clase 1.</p>
+        </div>
+      </article>
+      <article class="pagina" id="clase4">
+        <h1>CLASE 4</h1>
+        <div class="bloque">
+          <strong>Contenido no asignado</strong>
+          <p>El material de trompeta fue solicitado únicamente en Clase 1.</p>
+        </div>
+      </article>
+    </section>
+  </main>
+  <footer>
+    © 2026 CEMB · Cursos Esenciales de Música Básica
+  </footer>
+  <script src="fondo-universo.js" defer></script>
+  <script src="barra-lateral.js" defer></script>
+</body>
+</html>
